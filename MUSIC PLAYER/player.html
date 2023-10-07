@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="music-box">
+            <div class="icons">
+                <i class="fa fa-music" aria-hidden="true" id = "music" onclick="show()"></i>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <h2 class="title" id = "name">Arrarey mansa</h2>
+            <h4 class="artist" id ="singer">Sid SriRam</h4>
+            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/falaknuma-das-et00101008-17-04-2019-03-03-47.jpg" alt="Falaknuma Das" id="songImg">
+            <audio src="track2.mp3"  id ='song'></audio>
+
+        <input type="range" id="progress">
+            <div class="controls">
+                <div onclick="prevBtn()"><i class="fa fa-backward" aria-hidden="true"></i></div>
+                <div onclick="controls()" id ="btnContainer"><i class="fa-solid fa-play" id ="ctlIcon"></i></div>
+                <div onclick ="nextBtn()"><i class="fa fa-forward" aria-hidden="true"></i></div>
+                
+                
+            </div>
+
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

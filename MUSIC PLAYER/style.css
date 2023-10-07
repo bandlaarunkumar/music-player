@@ -1,0 +1,142 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.container{
+        background-color:rgb(43, 53, 25);
+        width:100%;
+        height:100vh;
+        overflow-y: hidden;
+
+}
+#music-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:90px auto;
+    border:3px solid white;
+    border-radius:25px;
+    width:450px;
+    color:white;
+    background-color: black;
+    line-height: 35px;
+    visibility: visible;
+
+}
+.icons{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+
+img{
+    width:50%;
+    height:25vh;
+    
+    
+    border:2px solid white;
+    margin:30px auto;
+
+}
+
+#progress{
+    -webkit-appearance:none;
+    width:90%;
+    height:6px;
+    background: olivedrab;
+    border-radius: 4px;
+    cursor:pointer;
+    margin:0px 10px;
+    border:2px solid black;
+
+}
+
+/* #progress :: -webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: green;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:  0 5px 5px green;
+
+} */
+.controls{
+    margin:50px auto;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+i{
+    color:green;
+}
+.fa-play, .fa-pause{
+    border-radius:50%;
+    background-color: black;
+    padding:20px;
+    color:white;
+}
+#btnContainer{
+    border:5px solid green;
+
+    border-radius:50% ;
+}
+
+.image{
+    animation: rotateImg 50s linear infinite;
+}
+h4{
+    font-family:'Courier New', Courier, monospace;
+    color:gray;
+}
+
+.rotate{
+    background-color: blue;
+    animation: rotateYAnimation 1s ease-in; /* Use an animation */
+    transform-origin: center; /* Set the rotation origin to the center of the element */
+}
+
+@keyframes rotateYAnimation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg); /* Rotate 360 degrees on the X-axis */
+    }
+}
+
+@media (max-width:450px){
+    #music-box{
+        width:350px;
+    
+        
+    }
+
+}
+@media (max-width:370px){
+    .music-box{
+        width:300px;
+    
+        
+    }
+
+}
+
+@media (max-width:300px){
+    .music-box{
+        width:260px;
+    
+        
+    }
+
+}
+
+#tracks{
+    visibility:hidden;
+}
